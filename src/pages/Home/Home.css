@@ -594,6 +594,7 @@
     flex-wrap: wrap;
 }
 
+/* ===== TABLET ===== */
 @media (max-width: 1024px) {
     .hero__content {
         grid-template-columns: 1fr;
@@ -630,26 +631,176 @@
     }
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-    .hero__title {
-        font-size: clamp(2.5rem, 10vw, 3.5rem);
+    .hero {
+        min-height: auto;
+        padding: 100px 0 60px;
     }
-}
 
-@media (max-width: 600px) {
+    .hero__content {
+        min-height: auto;
+        gap: 30px;
+    }
+
+    .hero__badge {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        margin-bottom: 16px;
+    }
+
+    .hero__title {
+        font-size: clamp(2rem, 9vw, 3rem);
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+    }
+
+    .hero__subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 36px;
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .btn--lg {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+
+    .hero__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .hero__stat {
+        align-items: center;
+        text-align: center;
+        padding: 16px 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-md);
+    }
+
+    .hero__stat-number {
+        font-size: 1.5rem;
+    }
+
+    .hero__stat-label {
+        font-size: 0.75rem;
+    }
+
+    .hero__scroll-indicator {
+        display: none;
+    }
+
     .programs__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .program-card {
+        padding: 20px 16px;
+    }
+
+    .program-card__icon {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    .program-card__title {
+        font-size: 1rem;
+    }
+
+    .program-card__desc {
+        font-size: 0.82rem;
+        margin-bottom: 12px;
+    }
+
+    .program-card__link {
+        font-size: 0.8rem;
     }
 
     .why__grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .why__card {
+        padding: 24px 20px;
     }
 
     .testimonials__grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .testimonial-card {
+        padding: 24px 20px;
     }
 
     .cta__content {
-        padding: 50px 24px;
+        padding: 40px 20px;
+    }
+
+    .cta__title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .cta__subtitle {
+        font-size: 0.92rem;
+        margin-bottom: 24px;
+    }
+
+    .cta__actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cta__actions .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+    .hero {
+        padding: 90px 0 50px;
+    }
+
+    .hero__title {
+        font-size: clamp(1.8rem, 10vw, 2.4rem);
+    }
+
+    .programs__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-card {
+        padding: 24px 20px;
+    }
+
+    .program-card__icon {
+        font-size: 1.8rem;
+    }
+
+    .program-card__title {
+        font-size: 1.05rem;
     }
 }

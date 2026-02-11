@@ -372,7 +372,64 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: auto;
+        padding: 100px 0 50px;
+    }
+
+    .about-hero__content {
+        padding: 40px 0;
+    }
+
+    .about-hero__title {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        margin-bottom: 16px;
+    }
+
+    .about-hero__subtitle {
+        font-size: 0.92rem;
+    }
+
+    .about-mission__card {
+        padding: 28px 20px;
+    }
+
+    .about-mission__card h3 {
+        font-size: 1.15rem;
+    }
+
+    .about-mission__card p {
+        font-size: 0.88rem;
+    }
+
+    .about-values__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .about-values__card {
+        padding: 24px 16px;
+    }
+
+    .about-timeline__item {
+        margin-bottom: 24px;
+    }
+
+    .about-timeline__card {
+        padding: 16px;
+    }
+
+    .about-team__grid {
+        gap: 12px;
+    }
+
+    .about-team__card {
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
     .about-values__grid {
         grid-template-columns: 1fr;
     }
