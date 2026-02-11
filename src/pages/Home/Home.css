@@ -1,4 +1,9 @@
 /* ===== HOME — MINIMAL DARK ===== */
+.home {
+    width: 100%;
+    flex: 1;
+}
+
 .hero {
     position: relative;
     min-height: 100vh;

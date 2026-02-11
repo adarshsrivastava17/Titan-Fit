@@ -109,6 +109,8 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -117,6 +119,15 @@ body {
   color: var(--text-secondary);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -553,7 +564,7 @@ select {
   }
 
   :root {
-    --container-pad: 14px;
+    --container-pad: 12px;
     --section-pad: clamp(24px, 6vw, 40px);
   }
 
