@@ -353,19 +353,19 @@
 @media (max-width: 768px) {
     .facilities-hero {
         min-height: auto;
-        padding: 100px 0 50px;
+        padding: 80px 0 32px;
     }
 
     .facilities-hero__content {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .facilities-hero__title {
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
     }
 
     .facilities-hero__subtitle {
-        font-size: 0.92rem;
+        font-size: 0.85rem;
     }
 
     .facilities-stats {

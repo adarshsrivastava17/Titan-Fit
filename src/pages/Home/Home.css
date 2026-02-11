@@ -594,11 +594,12 @@
     flex-wrap: wrap;
 }
 
-/* ===== TABLET ===== */
+/* ===== TABLET (769–1024) ===== */
 @media (max-width: 1024px) {
     .hero__content {
         grid-template-columns: 1fr;
         text-align: center;
+        min-height: auto;
     }
 
     .hero__subtitle {
@@ -631,77 +632,85 @@
     }
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
+/* ===== iPad / Small Tablet (≤900) ===== */
+@media (max-width: 900px) {
     .hero {
         min-height: auto;
-        padding: 100px 0 60px;
+        padding: 90px 0 50px;
     }
 
     .hero__content {
         min-height: auto;
-        gap: 30px;
+        gap: 0;
+    }
+}
+
+/* ===== MOBILE (≤768) ===== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0 36px;
     }
 
     .hero__badge {
-        padding: 8px 16px;
-        font-size: 0.75rem;
-        margin-bottom: 16px;
+        padding: 6px 14px;
+        font-size: 0.7rem;
+        margin-bottom: 12px;
     }
 
     .hero__title {
-        font-size: clamp(2rem, 9vw, 3rem);
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
         letter-spacing: -1px;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
+        line-height: 1.1;
     }
 
     .hero__subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 28px;
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        max-width: 100%;
     }
 
     .hero__actions {
         flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 36px;
+        align-items: stretch;
+        gap: 10px;
+        margin-bottom: 20px;
     }
 
     .hero__actions .btn {
         width: 100%;
-        max-width: 300px;
         justify-content: center;
     }
 
     .btn--lg {
-        padding: 14px 28px;
-        font-size: 0.95rem;
+        padding: 13px 24px;
+        font-size: 0.9rem;
     }
 
     .hero__stats {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 10px;
         width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
     }
 
     .hero__stat {
         align-items: center;
         text-align: center;
-        padding: 16px 8px;
+        padding: 12px 8px;
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid var(--border-subtle);
-        border-radius: var(--radius-md);
+        border-radius: var(--radius-sm);
     }
 
     .hero__stat-number {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .hero__stat-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        margin-top: 2px;
     }
 
     .hero__scroll-indicator {
@@ -710,97 +719,168 @@
 
     .programs__grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 10px;
     }
 
     .program-card {
-        padding: 20px 16px;
+        padding: 16px 14px;
     }
 
     .program-card__icon {
-        font-size: 1.6rem;
-        margin-bottom: 10px;
+        font-size: 1.4rem;
+        margin-bottom: 8px;
     }
 
     .program-card__title {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
     }
 
     .program-card__desc {
-        font-size: 0.82rem;
-        margin-bottom: 12px;
+        font-size: 0.78rem;
+        margin-bottom: 10px;
+        line-height: 1.5;
     }
 
     .program-card__link {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
+    }
+
+    .program-card__animation {
+        width: 70px;
+        height: 70px;
     }
 
     .why__grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 10px;
     }
 
     .why__card {
-        padding: 24px 20px;
+        padding: 20px 16px;
+    }
+
+    .why__card-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .why__card-title {
+        font-size: 1rem;
+    }
+
+    .why__card-desc {
+        font-size: 0.85rem;
     }
 
     .testimonials__grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 10px;
     }
 
     .testimonial-card {
-        padding: 24px 20px;
+        padding: 20px 16px;
+    }
+
+    .testimonial-card__stars {
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+
+    .testimonial-card__text {
+        font-size: 0.85rem;
+        margin-bottom: 14px;
+    }
+
+    .testimonial-card__avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .testimonial-card__name {
+        font-size: 0.85rem;
     }
 
     .cta__content {
-        padding: 40px 20px;
+        padding: 28px 16px;
+        border-radius: var(--radius-lg);
     }
 
     .cta__title {
-        font-size: clamp(1.5rem, 6vw, 2rem);
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        margin-bottom: 10px;
     }
 
     .cta__subtitle {
-        font-size: 0.92rem;
-        margin-bottom: 24px;
+        font-size: 0.85rem;
+        margin-bottom: 18px;
     }
 
     .cta__actions {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 10px;
     }
 
     .cta__actions .btn {
         width: 100%;
-        max-width: 280px;
     }
 }
 
-/* ===== SMALL MOBILE ===== */
+/* ===== SMALL MOBILE (≤480) ===== */
 @media (max-width: 480px) {
     .hero {
-        padding: 90px 0 50px;
+        padding: 70px 0 28px;
+    }
+
+    .hero__badge {
+        font-size: 0.62rem;
+        padding: 5px 12px;
+        letter-spacing: 0.5px;
     }
 
     .hero__title {
-        font-size: clamp(1.8rem, 10vw, 2.4rem);
+        font-size: clamp(1.5rem, 9vw, 2rem);
+    }
+
+    .hero__subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 16px;
+    }
+
+    .hero__actions {
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .hero__stats {
+        gap: 8px;
+    }
+
+    .hero__stat {
+        padding: 10px 6px;
+    }
+
+    .hero__stat-number {
+        font-size: 1.1rem;
+    }
+
+    .hero__stat-label {
+        font-size: 0.62rem;
     }
 
     .programs__grid {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .program-card {
-        padding: 24px 20px;
+        padding: 18px 16px;
     }
 
-    .program-card__icon {
-        font-size: 1.8rem;
-    }
-
-    .program-card__title {
-        font-size: 1.05rem;
+    .cta__content {
+        padding: 24px 14px;
     }
 }
