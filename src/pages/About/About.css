@@ -375,67 +375,71 @@
 @media (max-width: 768px) {
     .about-hero {
         min-height: auto;
-        padding: 80px 0 32px;
+        padding: 70px 0 20px;
     }
 
     .about-hero__content {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .about-hero__title {
-        font-size: clamp(1.6rem, 7vw, 2.2rem);
-        margin-bottom: 10px;
+        font-size: clamp(1.5rem, 7vw, 2rem);
+        margin-bottom: 8px;
     }
 
     .about-hero__subtitle {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 
     .about-mission__card {
-        padding: 20px 16px;
+        padding: 16px 14px;
     }
 
     .about-mission__card h3 {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 
     .about-mission__card p {
-        font-size: 0.82rem;
+        font-size: 0.8rem;
     }
 
     .about-values__grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 8px;
     }
 
     .about-values__card {
-        padding: 18px 14px;
+        padding: 14px 12px;
     }
 
     .about-timeline__item {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
 
     .about-timeline__card {
-        padding: 14px;
+        padding: 12px;
     }
 
     .about-team__grid {
-        gap: 10px;
+        gap: 8px;
     }
 
     .about-team__card {
-        padding: 20px 14px;
+        padding: 16px 12px;
     }
 }
 
 @media (max-width: 480px) {
     .about-hero {
-        padding: 70px 0 24px;
+        padding: 64px 0 16px;
+    }
+
+    .about-hero__content {
+        padding: 6px 0;
     }
 
     .about-hero__title {
-        font-size: clamp(1.4rem, 8vw, 1.8rem);
+        font-size: clamp(1.3rem, 8vw, 1.6rem);
     }
 
     .about-values__grid {
@@ -444,5 +448,17 @@
 
     .about-team__grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-mission__card {
+        padding: 14px 12px;
+    }
+
+    .about-values__card {
+        padding: 12px 10px;
+    }
+
+    .about-timeline__card {
+        padding: 10px;
     }
 }

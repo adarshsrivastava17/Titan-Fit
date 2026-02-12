@@ -258,79 +258,88 @@
 @media (max-width: 768px) {
     .services-hero {
         min-height: auto;
-        padding: 80px 0 32px;
+        padding: 70px 0 20px;
     }
 
     .services-hero__content {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .services-hero__title {
-        font-size: clamp(1.6rem, 7vw, 2.2rem);
+        font-size: clamp(1.5rem, 7vw, 2rem);
     }
 
     .services-hero__subtitle {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 
     .service-card {
-        padding: 20px 16px;
+        padding: 16px 14px;
     }
 
     .service-card__icon {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .service-card__icon-wrap {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
 
     .service-card__title {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .service-card__desc {
-        font-size: 0.8rem;
-        margin-bottom: 12px;
+        font-size: 0.78rem;
+        margin-bottom: 10px;
     }
 
     .service-card__features {
         grid-template-columns: 1fr;
-        gap: 4px;
-        margin-bottom: 12px;
+        gap: 3px;
+        margin-bottom: 10px;
     }
 
     .service-card__features li {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
     }
 
     .service-card__btn {
-        padding: 8px 16px;
-        font-size: 0.8rem;
+        padding: 7px 14px;
+        font-size: 0.78rem;
     }
 
     .schedule-table th {
-        padding: 10px 12px;
-        font-size: 0.75rem;
+        padding: 8px 10px;
+        font-size: 0.72rem;
     }
 
     .schedule-table td {
-        padding: 8px 12px;
-        font-size: 0.78rem;
+        padding: 7px 10px;
+        font-size: 0.75rem;
     }
 }
 
 @media (max-width: 480px) {
     .services-hero {
-        padding: 70px 0 24px;
+        padding: 64px 0 16px;
+    }
+
+    .services-hero__content {
+        padding: 6px 0;
     }
 
     .services-hero__title {
-        font-size: clamp(1.4rem, 8vw, 1.8rem);
+        font-size: clamp(1.3rem, 8vw, 1.6rem);
     }
 
     .service-card {
-        padding: 16px 14px;
+        padding: 14px 12px;
+    }
+
+    .service-card__icon-wrap {
+        width: 32px;
+        height: 32px;
     }
 }

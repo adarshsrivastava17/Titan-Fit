@@ -641,46 +641,66 @@
 @media (max-width: 900px) {
     .hero {
         min-height: auto;
-        padding: 90px 0 50px;
+        padding: 80px 0 30px;
     }
 
     .hero__content {
         min-height: auto;
         gap: 0;
     }
+
+    .hero__subtitle {
+        margin-bottom: 16px;
+    }
+
+    .hero__actions {
+        margin-bottom: 16px;
+    }
+
+    .hero__stats {
+        gap: 14px;
+    }
+
+    .cta__content {
+        padding: 36px 20px;
+    }
+
+    .cta__subtitle {
+        margin: 0 auto 18px;
+    }
 }
 
 /* ===== MOBILE (≤768) ===== */
 @media (max-width: 768px) {
     .hero {
-        padding: 80px 0 36px;
+        padding: 70px 0 24px;
     }
 
     .hero__badge {
-        padding: 6px 14px;
-        font-size: 0.7rem;
-        margin-bottom: 12px;
+        padding: 5px 12px;
+        font-size: 0.65rem;
+        margin-bottom: 10px;
     }
 
     .hero__title {
-        font-size: clamp(1.8rem, 8vw, 2.6rem);
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
         letter-spacing: -1px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         line-height: 1.1;
     }
 
     .hero__subtitle {
-        font-size: 0.85rem;
-        margin-bottom: 20px;
-        line-height: 1.6;
+        font-size: 0.82rem;
+        margin-bottom: 14px;
+        line-height: 1.5;
         max-width: 100%;
     }
 
     .hero__actions {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap: 8px;
+        margin-bottom: 14px;
     }
 
     .hero__actions .btn {
@@ -689,8 +709,8 @@
     }
 
     .btn--lg {
-        padding: 13px 24px;
-        font-size: 0.9rem;
+        padding: 12px 20px;
+        font-size: 0.88rem;
     }
 
     .hero__stats {
@@ -837,55 +857,81 @@
 /* ===== SMALL MOBILE (≤480) ===== */
 @media (max-width: 480px) {
     .hero {
-        padding: 70px 0 28px;
+        padding: 64px 0 18px;
     }
 
     .hero__badge {
-        font-size: 0.62rem;
-        padding: 5px 12px;
-        letter-spacing: 0.5px;
+        font-size: 0.58rem;
+        padding: 4px 10px;
+        margin-bottom: 8px;
     }
 
     .hero__title {
-        font-size: clamp(1.5rem, 9vw, 2rem);
+        font-size: clamp(1.4rem, 8vw, 1.8rem);
+        margin-bottom: 6px;
     }
 
     .hero__subtitle {
-        font-size: 0.8rem;
-        margin-bottom: 16px;
+        font-size: 0.78rem;
+        margin-bottom: 12px;
     }
 
     .hero__actions {
-        gap: 8px;
-        margin-bottom: 16px;
+        gap: 6px;
+        margin-bottom: 12px;
     }
 
     .hero__stats {
-        gap: 8px;
+        gap: 6px;
     }
 
     .hero__stat {
-        padding: 10px 6px;
+        padding: 8px 4px;
     }
 
     .hero__stat-number {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .hero__stat-label {
-        font-size: 0.62rem;
+        font-size: 0.58rem;
     }
 
     .programs__grid {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 8px;
     }
 
     .program-card {
-        padding: 18px 16px;
+        padding: 14px 12px;
+    }
+
+    .program-card__icon {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+
+    .program-card__title {
+        font-size: 0.85rem;
+        margin-bottom: 2px;
+    }
+
+    .program-card__desc {
+        font-size: 0.72rem;
+        margin-bottom: 8px;
     }
 
     .cta__content {
-        padding: 24px 14px;
+        padding: 20px 12px;
+    }
+
+    .cta__title {
+        font-size: clamp(1.1rem, 5vw, 1.5rem);
+        margin-bottom: 8px;
+    }
+
+    .cta__subtitle {
+        font-size: 0.78rem;
+        margin-bottom: 14px;
     }
 }
