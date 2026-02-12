@@ -528,6 +528,7 @@ select {
 @media (max-width: 768px) {
   :root {
     --section-pad: clamp(32px, 7vw, 56px);
+    --container-pad: 16px;
   }
 
   .section-header {
@@ -564,7 +565,7 @@ select {
   }
 
   :root {
-    --container-pad: 12px;
+    --container-pad: 10px;
     --section-pad: clamp(24px, 6vw, 40px);
   }
 
