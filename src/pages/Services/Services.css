@@ -1,4 +1,10 @@
 /* ===== SERVICES — MINIMAL DARK ===== */
+.services {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .services-hero {
     position: relative;
     min-height: 60vh;

@@ -1,4 +1,10 @@
 /* ===== MEMBERSHIP — MINIMAL DARK ===== */
+.membership {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .membership-hero {
     position: relative;
     min-height: 60vh;

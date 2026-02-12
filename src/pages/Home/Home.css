@@ -1,7 +1,9 @@
 /* ===== HOME — MINIMAL DARK ===== */
 .home {
     width: 100%;
+    max-width: 100vw;
     flex: 1;
+    overflow-x: hidden;
 }
 
 .hero {
